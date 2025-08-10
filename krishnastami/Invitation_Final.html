@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kṛṣṇa Janmāṣṭamī Satsang Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: Georgia, serif;
+        background-color: white;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1350px;
+        margin: auto;
+        padding: 20px;
+    }
+    .text-column {
+        flex: 1 1 60%;
+    }
+    .text-column h1 {
+        color: #1779ba;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .text-column p {
+        font-family: 'Roboto', Georgia, serif;
+        margin-bottom: 16px;
+        text-align: justify;
+        text-indent: 30px;
+        line-height: 1.6;
+        font-size: 18px;    
+    }
+    .text-column b {
+        color: #e4870d;
+    }
+
+    /* Button container for proper spacing */
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px; /* space between buttons */
+        margin-top: 15px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #1779ba;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px; 
+        text-align: center;
+        flex: 1 1 auto;
+    }
+    .btn:hover {
+        background-color: #125f8c;
+    }
+
+    .image-column {
+        flex: 1 1 35%;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .image-column img {
+        max-width: 450px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border: 2px solid #1779ba;
+    }
+
+    .two-column {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center; /* vertically center image & text on desktop */
+    }
+
+
+.attendance-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.attendance-box h2 {
+    color: #1779ba;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.link-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #1779ba;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.link-btn:hover {
+    background-color: #125f8c;
+}
+
+.attendance-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.attendance-card {
+    flex: 1 1 45%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.attendance-card h2 {
+    margin-top: 0;
+    font-size: 22px;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+.attendance-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.attendance-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.header-inperson {
+    background-color: #1779ba; /* Blue */
+}
+.header-online {
+    background-color: #1779ba; /* Soft purple */
+}
+
+
+.attendance-details {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.attendance-details b {
+    color: #e4870d;
+}
+
+.attendance-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px 5px 0 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.attendance-btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-maps {
+    background-color: #4285F4; /* Google Blue */
+}
+.btn-maps:hover {
+    background-color: #3367d6;
+}
+
+.btn-teams {
+    background-color: #464EB8; /* Teams Purple */
+}
+.btn-teams:hover {
+    background-color: #3b409c;
+}
+
+.btn-youtube {
+    background-color: #FF0000; /* YouTube Red */
+}
+.btn-youtube:hover {
+    background-color: #cc0000;
+}
+
+@media (max-width: 768px) {
+    .attendance-section {
+        flex-direction: column;
+    }
+    .attendance-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* 
+  .instructions-section {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+     margin-top: 20px; 
+  }
+
+  .instructions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  } */
+.instructions-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1350px; /* Increased to match main container */
+  margin: 0 auto;
+  width: 100%; /* ensure it fills container */
+}
+
+.instructions-section {
+  padding: 30px 40px; /* increase horizontal padding for better spacing */
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  max-width: 1350px; /* optional: limit section width same as container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+  .instruction-card {
+    flex: 1 1 48%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 6px solid;
+    box-sizing: border-box;
+  }
+
+  .instruction-card h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .instruction-card ul {
+    padding-left: 20px;
+    list-style: none;
+  }
+
+  .instruction-card ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    position: relative;
+  }
+
+  .instruction-card ul li::before {
+    content: "✅";
+    position: absolute;
+    left: -25px;
+    color: #2c7a7b;
+  }
+
+  .inperson {
+    border-color: #2b6cb0; /* Blue left border */
+  }
+
+  .online {
+    border-color: #dd6b20; /* Orange left border */
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .instruction-card {
+      flex: 1 1 100%;
+    }
+  }
+
+/* start */
+/* Recording Section */
+.recording-section {
+  max-width: 1350px;
+  margin: 50px auto 80px auto;
+  padding: 0 20px;
+  font-family: 'Roboto', Georgia, serif;
+}
+
+.recording-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.video-wrapper {
+  flex: 1 1 540px;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 2px solid #1779ba;
+  padding-bottom: 30%;
+
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.recording-text {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.recording-text h2 {
+  color: #1779ba;
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.recording-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.recording-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-youtube-link {
+  background-color: #FF0000;
+}
+
+.btn-youtube-link:hover {
+  background-color: #cc0000;
+}
+
+.btn-website-link {
+  background-color: #1779ba;
+}
+
+.btn-website-link:hover {
+  background-color: #125f8c;
+}
+
+@media (max-width: 768px) {
+  .recording-container {
+    flex-direction: column;
+  }
+  .video-wrapper, .recording-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .video-wrapper {
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio on mobile */
+    height: 0; /* important for aspect ratio */
+    overflow: hidden;
+  }
+  .video-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+  .recording-text p {
+    text-align: left;
+  }
+}
+
+
+/* end */
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="two-column">
+        <!-- Text Column -->
+        <div class="text-column">
+            <h1>Invitation to Kṛṣṇa Janmāṣṭamī Satsang</h1>
+            <p>
+                Universal Spirituality for World Peace wholeheartedly invites all the spiritual aspirants to the 
+                <b>Kṛṣṇa Janmāṣṭamī Satsanga</b> on <b>Saturday, 16th August 2025</b>. Get answers to your spiritual 
+                doubts/questions directly from <b>His Holiness Shri Datta Swami</b>!
+            </p>
+            <p>
+                <b>His Holiness Shri Datta Swami</b> is a complete Incarnation of the Lord Datta (<i>Pari Pūrṇa Avatāra</i>). 
+                The Absolute God is unimaginable to all souls in creation, and hence, it is impossible to worship Him. So, 
+                the Absolute Unimaginable God has incarnated in the upper energetic world as Lord Datta. 'Datta' means 'the 
+                Given One'. Lord Datta is the God who has given Himself to the world of souls for their worship. Lord Datta 
+                has further incarnated in the upper energetic world as Lord Brahmā, Lord Viṣṇu, Lord Śiva, and so on. On Earth, 
+                Lord Datta has incarnated as numerous Human Incarnations in the past, including Lord Rāma and Lord Kṛṣṇa. His 
+                Holiness Shri Datta Swami is the contemporary Human Incarnation of Lord Datta. The same Lord Datta who had earlier 
+                incarnated as Lord Kṛṣṇa has now incarnated as Shri Datta Swami. He has come to this world to preach divine knowledge 
+                to mankind. He has revealed divine spiritual knowledge with unprecedented clarity.
+            </p>
+
+            <!-- Button Group -->
+            <div class="btn-group">
+                <a id="btn-about-swami" href="https://www.universal-spirituality.org/discourses/who-is-swami--738--1422--ENG" class="btn" target="_blank">About Swami</a>
+                <a id="btn-swami-biography" href="https://www.universal-spirituality.org/discourses/shri-datta-swami-a-brief-biography--737--1421--ENG" class="btn" target="_blank">Swami's Biography</a>
+            </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="image-column">
+            <img src="posterImage.png" alt="Event Poster">
+        </div>
+    </div>
+
+    <!-- Attendance Details Section -->
+<!-- Attendance Details Section -->
+<div class="attendance-section">
+
+    <!-- In Person Card -->
+    <div class="attendance-card">
+        <div class="attendance-header header-inperson">
+            🏛️ Attend In Person
+        </div>
+        <div class="attendance-details">
+            <p><b>Date:</b> 16th August 2025 (Saturday)</p>
+            <p><b>Venue:</b> Datta Devalayam</p>
+            <p><b>Address:</b> Road No-2, Indira Nagar Colony, Shankar Nagar, Sreerangapatna, Hyderabad.</p>
+            <p><b>Landmark:</b> Near &lt;Landmark Details&gt;</p>
+        </div>
+        <a href="https://maps.app.goo.gl/58C3V3siGZZbQ6hW8?g_st=aw" class="attendance-btn btn-maps" target="_blank">
+            📍 Google Maps
+        </a>
+    </div>
+
+    <!-- Online Card -->
+    <div class="attendance-card">
+        <div class="attendance-header header-online">
+            💻 Attend Online
+        </div>
+        <div class="attendance-details">
+            <p><b>Microsoft Teams:</b> Interact directly with Swami and ask questions live.</p>
+            <p><b>YouTube Live:</b> Watch the satsang live without login requirements.</p>
+        </div>
+        <a href="https://teams.microsoft.com/l/meetup-join/..." class="attendance-btn btn-teams" target="_blank">
+            💼 Join via Microsoft Teams
+        </a>
+        <a href="https://youtu.be/oqN7C79SjQI?si=8sfCUf-jqkimSMNQ" class="attendance-btn btn-youtube" target="_blank">
+            🎥 Watch on YouTube
+        </a>
+    </div>
+
+    <!-- Instructions Section -->
+<section class="instructions-section">
+  <div class="instructions-container">
+
+    <div class="instruction-card inperson">
+      <h3>🏛️ Instructions for Attending In Person</h3>
+      <ul>
+        <li>Come empty-handed — do not bring anything for Swami (fruits, sweets, flowers, clothes, etc.).</li>
+        <li>You may offer Guru Dakshinā in money as per your capacity and devotion.</li>
+        <li>Before asking a question, mention your name first.</li>
+        <li>Stay until the end of the Satsanga — leaving midway disturbs others.</li>
+        <li>If you cannot sit for full duration, please attend online instead.</li>
+        <li>Arrive at least 15 minutes before the Satsanga begins.</li>
+        <li>Keep your phone silent.</li>
+        <li>If you need frequent washroom use, sit near the walkway.</li>
+      </ul>
+    </div>
+
+    <div class="instruction-card online">
+      <h3>💻 Instructions for Attending Online</h3>
+      <ul>
+        <li>Ask questions directly only if attending via Microsoft Teams.</li>
+        <li>Ask from a quiet place so everyone hears clearly.</li>
+        <li>Write your question in advance.</li>
+        <li>Type your question in Teams chat or YouTube Live comments if you want it read aloud.</li>
+        <li>Bookmark this page — joining links are here.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- New Section: Recording of Previous Satsanga -->
+<section class="recording-section">
+  <div class="recording-container">
+    <!-- Video Embed -->
+    <div class="video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/2qo16x9M038?si=D2bOnTqlOsBGvU7T" 
+        title="Guru Pūrṇimā 2025 Satsanga Recording" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Text & Links -->
+    <div class="recording-text">
+      <h2>Recording of the Previous Satsanga: Guru Pūrṇimā - 2025</h2>
+      <p>
+        Let us all celebrate this Śrī Kṛṣṇa Janmāṣṭamī Satsanga by listening to the excellent divine spiritual knowledge from His Holiness Shri Datta Swami.
+      </p>
+
+      <div class="recording-links">
+        <a href="https://www.youtube.com/@shridattaswami" target="_blank" class="btn btn-youtube-link" aria-label="YouTube Channel">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20" height="20" aria-hidden="true" focusable="false">
+            <path d="M23.5 6.2a2.88 2.88 0 0 0-2.02-2.04C19.82 3.75 12 3.75 12 3.75s-7.82 0-9.48.41a2.88 2.88 0 0 0-2.02 2.04A29.8 29.8 0 0 0 0 12a29.8 29.8 0 0 0 .48 5.8 2.88 2.88 0 0 0 2.02 2.04c1.66.41 9.48.41 9.48.41s7.82 0 9.48-.41a2.88 2.88 0 0 0 2.02-2.04A29.8 29.8 0 0 0 24 12a29.8 29.8 0 0 0-.5-5.8zM9.75 16.5v-9l6 4.5-6 4.5z"/>
+          </svg>
+          YouTube Channel
+        </a>
+
+        <a href="https://www.universal-spirituality.org/" target="_blank" class="btn btn-website-link" aria-label="Universal Spirituality Website">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm7.93 9h-3.05a15.563 15.563 0 0 0-1.25-4.63A8 8 0 0 1 19.93 11zM12 4a13.44 13.44 0 0 1 2.38 5H9.62A13.44 13.44 0 0 1 12 4zm-3.95 7a17.424 17.424 0 0 0 0 2h7.9a17.424 17.424 0 0 0 0-2zm-1.66 6.63A15.572 15.572 0 0 0 8.88 14H5.83a8 8 0 0 1 1.56 3.63zM4.07 13h3.05a15.563 15.563 0 0 0 1.25 4.63A8 8 0 0 1 4.07 13zm7.86 7.93A13.44 13.44 0 0 1 12 20a13.44 13.44 0 0 1-2.38-5h4.76a13.44 13.44 0 0 1-2.38 5zm3.95-1.3a17.423 17.423 0 0 0 1.58-3.63h3.05a8 8 0 0 1-1.56 3.63z"/>
+          </svg>
+          universal-spirituality.org
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
